@@ -9,8 +9,9 @@ public class MapCollection {
         map.put("3", "two");
         map.put("2", "three");
 
-        Map map1 = new Hashtable();
-        Map map2 = new TreeMap();
-        Map map3 = new LinkedHashMap();
+        Map map1 = new Hashtable();//неупорядоченная мап без гарантии порядка
+        Map map2 = new TreeMap();// упорядоченная и отсортированная
+        Map map3 = new LinkedHashMap();// упорядоченная в порядке вставки
+
     }
 }
