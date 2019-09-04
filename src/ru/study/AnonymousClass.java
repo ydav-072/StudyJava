@@ -17,11 +17,11 @@ public class AnonymousClass {
             }
         };
         popcorn.doSomething();
-        // some interface
+        // some interface i
         Comparable comparable = new Comparable() {
             @Override
             public int compareTo(Object o) {
-                return 0;  
+                return 0;
             }
         };
     }

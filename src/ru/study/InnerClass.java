@@ -9,7 +9,7 @@ public class InnerClass {
         //first method to use and Create InnerClass
         InnerClass innerClass = new InnerClass();
         innerClass.someMethod();
-        //second
+        //second i 
         InnerClass innerClass1 = new InnerClass();
         InnerClassExample innerClassExample1 = innerClass1.new InnerClassExample();
         innerClassExample1.doSomethingMethod(99);
