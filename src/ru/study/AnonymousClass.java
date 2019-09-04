@@ -21,7 +21,7 @@ public class AnonymousClass {
         Comparable comparable = new Comparable() {
             @Override
             public int compareTo(Object o) {
-                return 0;
+                return 0;  
             }
         };
     }
