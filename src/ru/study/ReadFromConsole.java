@@ -14,7 +14,7 @@ public class ReadFromConsole {
             str = scanner.nextLine();
             System.out.println(str);
         }
-        
+
         //more comfortable for me
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         String sName = bufferedReader.readLine();
