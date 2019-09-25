@@ -49,8 +49,8 @@ class MyRunnableThread implements Runnable{
         System.out.println("this is second create thread");
     }
 }
-//number three
-class MyClonableThread implements Callable {
+//number three.... very difficult now
+class MyCallableThread implements Callable {
 
     @Override
     public Object call() throws Exception {
