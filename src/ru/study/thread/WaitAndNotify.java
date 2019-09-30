@@ -1,6 +1,7 @@
 package ru.study.thread;
 //метод wait говорит потоку что необходимо ожидать(спать) пока его не модифицируют с помощью notify
 //это позволяет избегать постоянного опроса на освобождение ресурсов или чего-либо...
+// эти методы обязательно должны вызываться из синхронизированных блоков(обьектов), при чем синхронизация должна быть по одному и тому же обьекту
 public class WaitAndNotify {
     public static void main(String[] args) throws InterruptedException {
         ThreadB threadB = new ThreadB();
