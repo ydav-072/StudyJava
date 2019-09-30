@@ -13,6 +13,7 @@ public class WaitAndNotify {
             // соответсвенно когда threadB все посчитает, он отправляет notify ожидающему его потоку и тот когда получает notify
             // прекращает ждать и продложает свое выполнение.
         }
+        System.out.println(threadB.total);
     }
     static class ThreadB extends Thread{
         int total;
@@ -27,6 +28,7 @@ public class WaitAndNotify {
                         e.printStackTrace();
                     }
                 }
+                System.out.println("notify");
                 notify();//сообщение что работа закончена
             }
         }
