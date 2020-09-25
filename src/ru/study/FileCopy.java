@@ -2,9 +2,9 @@ package ru.study;
 
 import java.io.*;
 
-public class WorkWithFile {
+public class FileCopy {
     public static void main(String[] args) {
-        File path = new File("temp");
+        File path = new File("temp2");
         File file = new File(path + "\\text.txt");
         path.mkdir();
         try {
@@ -22,27 +22,21 @@ public class WorkWithFile {
 
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
-            while (bufferedReader.ready()){
-                System.out.println(bufferedReader.readLine());
-            }
+            bufferedReader.read();
 
-
-            //copy in new file
-            File fileCopy = new File(path + "\\copyText1.txt");
+            File fileCopy = new File(path + "\\textCopy.txt");
             fileCopy.createNewFile();
             FileWriter fileWriterCopy = new FileWriter(fileCopy);
             BufferedWriter bufferedWriterCopy = new BufferedWriter(fileWriterCopy);
             while (bufferedReader.ready()){
-                bufferedWriterCopy.write(bufferedReader.readLine());
-                bufferedWriterCopy.newLine();
-                bufferedWriterCopy.flush();
+                bufferedWriterCopy.write(bufferedReader.read());
             }
-
+            bufferedWriterCopy.flush();
+            bufferedReader.close();
             bufferedWriterCopy.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
+
 }
