@@ -3,7 +3,7 @@ package ru.study.thread;
 public class ThreadSynhronizeExp {
     public static void main(String[] args) throws InterruptedException {
         Resources resources = new Resources();
-        resources.setI(5);
+        resources.setI(8);
         NewThreadExpl newThreadEx = new NewThreadExpl();
         newThreadEx.setName("one");
         NewThreadExpl newThreadEx1 = new NewThreadExpl();
